@@ -1,9 +1,13 @@
-import style from'./Header.module.scss';
+import LogoIcon from '../icons/logoicon';
+import'./Header.scss';
 
 function Header() {
   return (
    <>
-   <div className={style.colorText}>Header</div>
+<div className='logo'>
+  <LogoIcon/>
+  <div className='Logo_text'>PNFT Market</div>
+</div>
    </>
   );
 }

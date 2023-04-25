@@ -1,11 +1,7 @@
-import style from'./Footer.module.scss';
+import'./Footer.scss';
 
 function Footer() {
-  return (
-   <>
-   <h1 className={style.colorText}>Footer</h1>
-   </>
-  );
+  return <div className='copyright'> @CreatedbyNAMDesign </div>;
 }
 
 export default Footer;
