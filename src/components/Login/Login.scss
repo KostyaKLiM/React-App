@@ -1,2 +1,82 @@
-@import '/src/scss/vars';
+@import "/src/scss/vars";
+a{
+	text-decoration: none;
+}
 
+.login {
+  padding-top: 149px;
+  margin-inline: auto;
+
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.01em;
+    color: #344054;
+  }
+  &__desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+    padding-top: 8px;
+    padding-bottom: 36px;
+  }
+  input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #667085;
+  }
+  .input {
+    display: flex;
+    flex-direction: column;
+    span {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #344054;
+      padding-top: 20px;
+    }
+    &__email,
+    &__password {
+      box-sizing: border-box;
+      width: 360px;
+      height: 44px;
+      border: 1px solid #d0d5dd;
+      border-radius: 8px;
+      padding: 10px 153px 10px 14px;
+      margin-top: 8px;
+		outline: none;
+    }
+  }
+  .checkbox {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-top: 20px;
+.checkbox__block {
+	display: flex;
+}
+.checkbox-custom {
+	width: 16px;
+height: 16px;
+.checkbox-custom::after{
+	border: 1px solid #D0D5DD;
+border-radius: 4px;
+}
+}
+.remember {
+	font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+color: #344054;
+}
+.forgot {
+	font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+color: #5429FF;
+}
+  }
+}
