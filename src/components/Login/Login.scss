@@ -1,6 +1,6 @@
 @import "/src/scss/vars";
-a{
-	text-decoration: none;
+a {
+  text-decoration: none;
 }
 
 .login {
@@ -47,36 +47,74 @@ a{
       border-radius: 8px;
       padding: 10px 153px 10px 14px;
       margin-top: 8px;
-		outline: none;
+      outline: none;
     }
   }
   .checkbox {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding-top: 20px;
-.checkbox__block {
-	display: flex;
-}
-.checkbox-custom {
-	width: 16px;
-height: 16px;
-.checkbox-custom::after{
-	border: 1px solid #D0D5DD;
-border-radius: 4px;
-}
-}
-.remember {
-	font-weight: 500;
-font-size: 14px;
-line-height: 20px;
-color: #344054;
-}
-.forgot {
-	font-weight: 500;
-font-size: 14px;
-line-height: 20px;
-color: #5429FF;
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 44px;
+    .checkbox__block {
+      display: flex;
+    }
+    .checkbox-custom {
+      width: 16px;
+      height: 16px;
+      .checkbox-custom::after {
+        border: 1px solid #d0d5dd;
+        border-radius: 4px;
+      }
+    }
+    .remember {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #344054;
+    }
+    .forgot {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #5429ff;
+    }
+  }
+  .login__sign-in {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    background: #5429ff;
+    border-radius: 8px;
+    padding: 12px 154px;
+  }
+  .login__google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 8px;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    padding: 8px 90px;
+    margin-top: 28px;
+    &-sign {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #344054;
+    }
+  }
+  &__signup {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    color: #344054;
+    padding-top: 24px;
+    & a{
+      color: #5429FF;
+    }
   }
 }

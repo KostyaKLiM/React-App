@@ -1,3 +1,4 @@
+import GoogleIcon from "../icons/googleicon";
 import "./Login.scss";
 
 function Login() {
@@ -21,6 +22,12 @@ function Login() {
           </label>
           <a href="/" className="forgot">Forgot Password?</a>
         </div>
+        <a className="login__sign-in" href="/">Sign in</a>
+        <div className="login__google">
+          <GoogleIcon/>
+          <a href="/" className="login__google-sign">Sign in with Google</a>
+        </div>
+        <div className="login__signup">Don’t have an account? <a href="/" className="login__signup-up">Sign up</a></div>
       </div>
     </>
   );
