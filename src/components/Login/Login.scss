@@ -56,23 +56,47 @@ a {
     align-items: center;
     padding-top: 20px;
     padding-bottom: 44px;
-    .checkbox__block {
+    &-block {
       display: flex;
-    }
-    .checkbox-custom {
+      gap: 8px;
+      align-items: center;
+      cursor: pointer;
+    &__input {
+      // display: none;
+      &:checked~ .checkbox-block__checkmark{
+        background: #5429FF;
+        border-color: #5429FF;
+        svg{
+          transform: scale(1);
+        }
+      }
+          }
+    &__checkmark{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #D0D5DD;
+      border-radius: 4px;
       width: 16px;
       height: 16px;
-      .checkbox-custom::after {
-        border: 1px solid #d0d5dd;
-        border-radius: 4px;
+      transition: .2s all ease-in-out;
+      svg{
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        fill:#ffffff ;
+        transition: .4s all ease-in-out;
+        transform: scale(0);
       }
     }
-    .remember {
+    &__remember {
+      font-family: "Inter";
       font-weight: 500;
       font-size: 14px;
       line-height: 20px;
       color: #344054;
     }
+  }
     .forgot {
       font-weight: 500;
       font-size: 14px;
