@@ -1,3 +1,4 @@
+import Button from "../UI/Button/Button";
 import Checkbox from "../UI/Checkbox/Checkbox";
 import Input from "../UI/Input/Input";
 import GoogleIcon from "../icons/googleicon";
@@ -18,28 +19,19 @@ function Login() {
           type="email"
         />
 
-        <Input 
-        title="Password" 
-        placeholder="••••••••" 
-        type="password" 
-        />
+        <Input title="Password" placeholder="••••••••" type="password" />
 
         <div className="checkbox">
-          <Checkbox title="Remember me"/>
-
+          <Checkbox title="Remember me" />
           <a href="/" className="forgot">
             Forgot Password?
           </a>
         </div>
-        <a className="login__sign-in" href="/">
-          Sign in
-        </a>
-        <div className="login__google">
-          <GoogleIcon />
-          <a href="/" className="login__google-sign">
-            Sign in with Google
-          </a>
-        </div>
+
+        <Button addClass="_primary" title="Sign in" type="sumbit" />
+
+        <Button linkTo="/" addClass="_secondary" title="Sign in with Google" icon={<GoogleIcon/>}/>
+
         <div className="login__signup">
           Don’t have an account?{" "}
           <a href="/" className="login__signup-up">

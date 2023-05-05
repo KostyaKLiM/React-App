@@ -1,0 +1,56 @@
+@import "/src/scss/vars";
+
+.checkbox {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+	padding-bottom: 44px;
+	&-block {
+	  display: flex;
+	  gap: 8px;
+	  align-items: center;
+	  cursor: pointer;
+	  &__input {
+		 display: none;
+		 &:checked ~ .checkbox-block__checkmark {
+			background: #5429ff;
+			border-color: #5429ff;
+			svg {
+			  transform: scale(1);
+			}
+		 }
+	  }
+	  &__checkmark {
+		 display: flex;
+		 align-items: center;
+		 justify-content: center;
+		 border: 1px solid #d0d5dd;
+		 border-radius: 4px;
+		 width: 16px;
+		 height: 16px;
+		 transition: 0.2s all ease-in-out;
+		 svg {
+			width: 12px;
+			height: 12px;
+			display: inline-block;
+			fill: #ffffff;
+			transition: 0.4s all ease-in-out;
+			transform: scale(0);
+		 }
+	  }
+	  &__remember {
+		 font-family: "Inter";
+		 font-weight: 500;
+		 font-size: 14px;
+		 line-height: 20px;
+		 color: #344054;
+	  }
+	}
+	.forgot {
+	  font-weight: 500;
+	  font-size: 14px;
+	  line-height: 20px;
+	  color: #5429ff;
+	}
+ }
