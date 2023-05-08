@@ -30,7 +30,12 @@ function Login() {
 
         <Button addClass="_primary" title="Sign in" type="sumbit" />
 
-        <Button linkTo="/" addClass="_secondary" title="Sign in with Google" icon={<GoogleIcon/>}/>
+        <Button
+          linkTo="/"
+          addClass="_secondary"
+          title="Sign in with Google"
+          icon={<GoogleIcon />}
+        />
 
         <div className="login__signup">
           Don’t have an account?{" "}
